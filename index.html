@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Tour</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet"><!-- Make sure to include defer attribute -->
+</head>
+<body>
+<!-- header -->
+<header>
+    <a href="#" class="logo">chalo-यार</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#package">Package</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#Login" id="login-link">Login</a></li>
+    </ul>
+</header>
+
+<!-- login form -->
+<div class="login-form-container" id="login-form" style="display: none;">
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="Enter email address" required autofocus />
+        <input type="password" class="box" placeholder="Enter password" />
+        <input type="submit" value="login now" class="home-btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <p>Forget password?<a href="#">click here</a></p>
+        <p>New user?<a href="#" id="register-link">Register now</a></p>
+    </form>
+</div>
+
+<!-- registration form -->
+<div class="register-form-container" id="register-form" style="display: none;">
+    <form action="">
+        <h3>Register</h3>
+        <input type="text" class="box" placeholder="Full Name" required autofocus />
+        <input type="text" id="phone" class="box" placeholder="Enter phone number" required maxlength="10" />
+        <input type="email" class="box" placeholder="Enter email address" required />
+        <input type="password" class="box" placeholder="Enter password" required />
+        <select class="box" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="submit" value="register now" class="home-btn">
+    </form>
+</div>
+
+<!-- home section -->
+<section class="home" id="home">
+    <div class="home-text">
+        <h1>TRAVEL<br>REPEAT.</h1>
+        <p><b>Travel far enough, you meet yourself.</b></p>
+        <a href="#" class="home-btn">Explore</a>
+    </div>
+    <video autoplay muted loop class="home-video">
+        <source src="./2439510-hd_1920_1080_30fps.mp4" width="100%" height="100%" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!-- book section -->
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="./book.jpg" alt="">
+        </div>
+        <form action="">
+            <div class="inputbox">
+                <h3>WHERE TO</h3>
+                <input type="text" placeholder="DESTINATION NAME">
+            </div>
+            <div class="inputbox">
+                <h3>NO. OF PEOPLE</h3>
+                <input type="number" placeholder="Enter no. of people">
+            </div>
+            <div class="inputbox">
+                <h3>Arrival</h3>
+                <input type="date">
+            </div>
+            <div class="inputbox">
+                <h3>Leaving</h3>
+                <input type="date">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- container -->
+<section class="container">
+    <div class="text">
+        <h2>Excellence in:</h2>
+    </div> 
+    <!-- container  -->
+    <div class="row-items">
+        <div class="container-box">
+            <div class="container-img">
+                <img src="./cruise.jpg">
+            </div>
+            <h4>Cruises</h4>
+            <p>100 Properties</p>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <img src="./mountain.jpg">
+            </div>
+            <h4>Trekk</h4>
+            <p>100 Properties</p>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <img src="./villas.jpg">
+            </div>
+            <h4>Villas</h4>
+            <p>100 Properties</p>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <img src="./hotel.png">
+            </div>
+            <h4>Resorts</h4>
+            <p>100 Properties</p>
+        </div>
+    </div>
+</section>
+<!-- packages section start -->
+<section class="packages" id="package">
+    <h1 class="heading">
+    PACKAGES
+    </h1>
+    <div class="pak-box-container">
+<!--jaipur-->
+        <div class="pak-box">
+            <img src="./jaipur.jpg" alt="">
+            <div class="content">
+                <h3><i class='bx bx-location-plus'></i>Jaipur</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facilis omnis ullam quibusdam exercitationem, inventore molestiae ipsa!</p>
+                <div class="stars">
+    <i class='bx bxs-star' ></i>
+    <i class='bx bxs-star' ></i>
+    <i class='bx bxs-star' ></i>
+    <i class='bx bxs-star' ></i>
+    <i class='bx bx-star'></i>
+</div>
+<div class="price">$2000 -<span>$5000</span></div>
+<a href="#" class="home-btn">book</a>
+            </div>
+</div>
+<!-- mumbai -->
+        <div class="pak-box">
+            <img src="./mumbai.jpg" alt="">
+            <div class="content">
+                <h3><i class='bx bx-location-plus'></i>Mumbai</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facilis omnis ullam quibusdam exercitationem, inventore molestiae ipsa!</p>
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="price">$2000 -<span>$5000</span></div>
+                <a href="#" class="home-btn">book</a>
+            </div></div>
+<!-- delhi-->
+            <div class="pak-box">
+                <img src="./delhi.jpg" alt="">
+                <div class="content">
+                    <h3><i class='bx bx-location-plus'></i>Delhi</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facilis omnis ullam quibusdam exercitationem, inventore molestiae ipsa!</p>
+                    <div class="stars">
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bx-star'></i>
+    </div>
+    <div class="price">$2000 -<span>$5000</span></div>
+    <a href="#" class="home-btn">book</a>
+                </div>
+    
+            </div>
+<!-- manali-->
+            <div class="pak-box">
+                <img src="./manali.jpg" alt="">
+                <div class="content">
+                    <h3><i class='bx bx-location-plus'></i>manali</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facilis omnis ullam quibusdam exercitationem, inventore molestiae ipsa!</p>
+                    <div class="stars">
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bx-star'></i>
+    </div>
+    <div class="price">$2000 -<span>$5000</span></div>
+    <a href="#" class="home-btn">book</a>
+                </div>
+    
+            </div>
+<!-- kerala-->
+            <div class="pak-box">
+                <img src="./kerala.jpg" alt="">
+                <div class="content">
+                    <h3><i class='bx bx-location-plus'></i>Kerala</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facilis omnis ullam quibusdam exercitationem, inventore molestiae ipsa!</p>
+                    <div class="stars">
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bx-star'></i>
+    </div>
+    <div class="price">$2000 -<span>$5000</span></div>
+    <a href="#" class="home-btn">book</a>
+                </div>
+    
+            </div>
+<!-- assam -->
+            <div class="pak-box">
+                <img src="./Majuli-Assam.jpg" alt="">
+                <div class="content">
+                    <h3><i class='bx bx-location-plus'></i>Assam</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit facilis omnis ullam quibusdam exercitationem, inventore molestiae ipsa!</p>
+                    <div class="stars">
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bx-star'></i>
+    </div>
+    <div class="price">$2000 -<span>$5000</span></div>
+    <a href="#" class="home-btn">book</a>
+                </div>
+    
+            </div>
+    
+
+
+    </div>
+</section>
+</body>
+</html>
